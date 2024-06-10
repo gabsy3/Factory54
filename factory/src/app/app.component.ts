@@ -21,7 +21,7 @@ import { ApiService } from './services/api.service';
 
 export class AppComponent {
   ApiService = inject(ApiService)
-  displayedColumns: string[] = ['stockId', 'stockName', 'basePrice', 'askQty', 'askPrice', 'bidQty', 'bidPrice', 'lastPrice', 'lastUpdate'];
+  displayedColumns: string[] = ['stockId', 'stockName', 'basePrice', 'askQty', 'askPrice', 'bidQty', 'bidPrice', 'lastPrice', 'lastUpdate','bidTotal','askTotal','percentageChange'];
   dataSource = this.ApiService.getData();
   getData() {
     this.dataSource = this.ApiService.getData();

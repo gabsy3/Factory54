@@ -8,4 +8,7 @@ export interface modelData {
     bidPrice: number;
     lastPrice:number;
     lastUpdate: Date;
+    bidTotal?:number;
+    askTotal?:number;
+    percentageChange?:number;
   }

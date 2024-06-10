@@ -48,6 +48,23 @@
     <td mat-cell *matCellDef="let element"> {{element.lastUpdate}} </td>
   </ng-container>
 
+  <ng-container matColumnDef="bidTotal">
+    <th mat-header-cell *matHeaderCellDef>  סה"כ היצע </th>
+    <td mat-cell *matCellDef="let element"> {{element.bidTotal}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="askTotal">
+    <th mat-header-cell *matHeaderCellDef>  סה"כ ביקוש   </th>
+    <td mat-cell *matCellDef="let element"> {{element.askTotal}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="percentageChange">
+    <th mat-header-cell *matHeaderCellDef>  שינוי באחוזים </th>
+    <td mat-cell *matCellDef="let element"> {{element.percentageChange}} </td>
+  </ng-container>
+
+
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
