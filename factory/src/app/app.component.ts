@@ -4,12 +4,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { ApiService } from './services/api.service';
 
-
-
-
-
-
-
 @Component({
   selector: 'app-root',
   standalone: true,
